@@ -3,6 +3,8 @@ import arrow from "../../assets/images/home/arrow.svg";
 import daoIcon from "../../assets/images/home/dao-icon.svg";
 import crypto from "../../assets/images/home/crypto.svg";
 import web3 from "../../assets/images/home/web3.svg";
+import { useState } from "react";
+import Modal from "../Modal";
 
 interface IServiceList {
   logo: any;
@@ -29,6 +31,8 @@ const serviceList: IServiceList[] = [
 ];
 
 const Services = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <ServiceSection>
       <Title>SERVICE FOR</Title>
@@ -40,13 +44,14 @@ const Services = () => {
             </ServiceLogo>
             <div>
               <p>{service.serviceName}</p>
-              <a href={service.link}>
+              <a onClick={() => setIsOpen(!isOpen)}>
                 Learn more <img src={arrow} alt="" />
               </a>
             </div>
           </Service>
         ))}
       </ServiceList>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(!isOpen)} />
     </ServiceSection>
   );
 };

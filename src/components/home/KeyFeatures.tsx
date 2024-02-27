@@ -4,6 +4,8 @@ import report from "../../assets/images/home/report.svg";
 import arrow from "../../assets/images/home/arrow.svg";
 import styled from "styled-components";
 import { Title } from "./Services";
+import Modal from "../Modal";
+import { useState } from "react";
 
 interface IKeyFeatureList {
   logo: any;
@@ -37,6 +39,7 @@ const keyFeatureList: IKeyFeatureList[] = [
 ];
 
 const KeyFeatures = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <KeyFeatureSection id="feature">
       <Title>KEY FEATURES</Title>
@@ -47,7 +50,7 @@ const KeyFeatures = () => {
               <h4>{feature.title}</h4>
               <p>{feature.details}</p>
               <div>
-                <a href={feature.link}>
+                <a onClick={() => setIsOpen(!isOpen)}>
                   Learn more <img src={arrow} alt="" />
                 </a>
               </div>
@@ -58,6 +61,7 @@ const KeyFeatures = () => {
           </Feature>
         ))}
       </FeatureList>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(!isOpen)} />
     </KeyFeatureSection>
   );
 };
