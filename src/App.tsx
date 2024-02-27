@@ -15,12 +15,15 @@
 //     </div>
 //   );
 // });
-import RouterLink from "./router";
+
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
 export const App = () => {
   return (
     <div>
-      <RouterLink />
+      <Navbar />
+      <Home />
     </div>
   );
 };

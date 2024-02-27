@@ -6,7 +6,7 @@ import telegram from "../assets/images/telegram.svg";
 
 const Contact = () => {
   return (
-    <ContactSection>
+    <ContactSection id="contact">
       <Title>CONTACT</Title>
       <Contacts>
         <ContactInfo>

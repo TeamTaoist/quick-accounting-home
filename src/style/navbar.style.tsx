@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
   background: linear-gradient(274deg, #5d98ae 100%, #a9cedb 0%);
@@ -21,7 +20,7 @@ export const Nav = styled.div`
     padding-inline: 5%;
   }
 `;
-export const NavList = styled.div`
+export const NavList = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +50,8 @@ export const Logo = styled.div`
     cursor: pointer;
   }
 `;
-export const NavLinks = styled(NavLink)`
+export const NavLinks = styled.li`
+  list-style: none;
   color: var(--text-primary);
   font-size: 16px;
   text-decoration: none;
@@ -70,7 +70,7 @@ export const MobileNavMenu = styled.div`
     display: block;
   }
 `;
-export const NavListDropdown = styled.div`
+export const NavListDropdown = styled.ul`
   position: absolute;
   right: 30px;
   top: 60px;
@@ -81,7 +81,8 @@ export const NavListDropdown = styled.div`
   }
 `;
 
-export const DropdownLink = styled(NavLink)`
+export const DropdownLink = styled.li`
+  list-style: none;
   font-size: 12px;
   color: var(--text-gray);
   display: none;

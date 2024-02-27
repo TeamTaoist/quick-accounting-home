@@ -5,7 +5,7 @@ import realTime from "../../assets/images/home/real-time.svg";
 
 const Benefits = () => {
   return (
-    <BenefitsSection>
+    <BenefitsSection id="benefits">
       <Title>BENEFITS</Title>
       <BenefitList>
         <Benefit>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HomeHeader = () => {
   return (
-    <Header>
+    <Header id="home">
       <h1>An web3 Accounting Software for Crypto Organizations.</h1>
       <p>
         Quick Accounting has the ability to tracking the transactions of crypto

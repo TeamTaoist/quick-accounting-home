@@ -20,25 +20,38 @@ interface INavList {
 const navList: INavList[] = [
   {
     name: "Home",
-    href: "/",
+    href: "home",
   },
   {
     name: "Feature",
-    href: "/feature",
+    href: "feature",
   },
   {
     name: "Benefits",
-    href: "/benefits",
+    href: "benefits",
   },
   {
     name: "Contact",
-    href: "/contact",
+    href: "contact",
   },
 ];
 
 const Navbar = () => {
   const userButtonRef = useRef<any>(null);
   const [showNavDropdown, setShowNavDropdown] = useState<boolean>(false);
+  const [activeNavLink, setActiveNavLink] = useState("home");
+
+  // handle nav scroll
+  const handleNavLink = (navLink: string) => {
+    setActiveNavLink(navLink);
+    const anchor = document.getElementById(navLink);
+    if (anchor) {
+      const offset = 70;
+      const scrollPosition =
+        anchor.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+    }
+  };
 
   // hide dropdown globally
   useEffect(() => {
@@ -58,15 +71,20 @@ const Navbar = () => {
       window.removeEventListener("click", handleClickOutside);
     };
   }, [showNavDropdown]);
+
   return (
     <NavbarContainer>
       <Nav>
-        <Logo>
+        <Logo onClick={() => handleNavLink("home")}>
           <img src={logo} alt="" />
         </Logo>
         <NavList>
           {navList.map((item, i) => (
-            <NavLinks to={item.href} key={i}>
+            <NavLinks
+              onClick={() => handleNavLink(item.href)}
+              key={i}
+              className={activeNavLink === item.href ? "active" : ""}
+            >
               {item.name}
             </NavLinks>
           ))}
@@ -84,7 +102,11 @@ const Navbar = () => {
       {showNavDropdown && (
         <NavListDropdown>
           {navList.map((item, i) => (
-            <DropdownLink to={item.href} key={i}>
+            <DropdownLink
+              onClick={() => handleNavLink(item.href)}
+              key={i}
+              className={activeNavLink === item.href ? "active" : ""}
+            >
               {item.name}
             </DropdownLink>
           ))}

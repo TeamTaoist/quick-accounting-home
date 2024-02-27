@@ -38,7 +38,7 @@ const keyFeatureList: IKeyFeatureList[] = [
 
 const KeyFeatures = () => {
   return (
-    <KeyFeatureSection>
+    <KeyFeatureSection id="feature">
       <Title>KEY FEATURES</Title>
       <FeatureList>
         {keyFeatureList.map((feature, index) => (
