@@ -53,6 +53,39 @@ const Navbar = () => {
     }
   };
 
+  // Detect scroll position to update active link
+  useEffect(() => {
+    const scrollHandler = () => {
+      const scrollPosition = window.scrollY;
+
+      // Find the section whose top offset is closest to the current scroll position
+      const activeSection = navList.reduce(
+        (closestSection, section) => {
+          const anchor = document.getElementById(section.href);
+          if (anchor) {
+            const offsetTop = anchor.offsetTop;
+            if (
+              Math.abs(offsetTop - scrollPosition) <
+              Math.abs(closestSection.offsetTop - scrollPosition)
+            ) {
+              return { href: section.href, offsetTop };
+            }
+          }
+          return closestSection;
+        },
+        { href: "", offsetTop: Number.MAX_VALUE }
+      );
+
+      setActiveNavLink(activeSection.href);
+    };
+
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
   // hide dropdown globally
   useEffect(() => {
     const handleClickOutside = (e: any) => {
