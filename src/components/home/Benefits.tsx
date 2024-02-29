@@ -35,7 +35,7 @@ const Benefits = () => {
 export default Benefits;
 
 const BenefitsSection = styled.section`
-  padding: 40px 10px;
+  padding: 40px 0;
 `;
 const BenefitList = styled.div`
   display: flex;
