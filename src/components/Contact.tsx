@@ -75,6 +75,6 @@ const SocialLink = styled.div`
     }
   }
   @media (max-width: 600px) {
-    width: 320px;
+    width: 310px;
   }
 `;

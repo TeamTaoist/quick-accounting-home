@@ -72,7 +72,7 @@ export const MobileNavMenu = styled.div`
 `;
 export const NavListDropdown = styled.ul`
   position: absolute;
-  right: 30px;
+  right: 11px;
   top: 60px;
   display: none;
   line-height: 20px;

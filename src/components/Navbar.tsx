@@ -122,7 +122,9 @@ const Navbar = () => {
             </NavLinks>
           ))}
           <button>
-            <a href="https://qa.taoist.dev/">Get Started</a>
+            <a href="https://qa.taoist.dev/" target="_blank">
+              Get Started
+            </a>
           </button>
         </NavList>
         <MobileNavMenu

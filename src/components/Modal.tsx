@@ -41,6 +41,7 @@ const ModalContent = styled.div`
   border-radius: 5px;
   position: relative;
   button {
+    border: none;
     outline: none;
     background: var(--text-primary);
     padding: 5px 10px;

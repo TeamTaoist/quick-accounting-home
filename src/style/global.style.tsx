@@ -9,6 +9,6 @@ export const Container = styled.div`
   padding-top: 90px;
   @media (max-width: 768px) {
     padding-top: 45px;
-    padding-inline: 3%;
+    padding-inline: 5%;
   }
 `;

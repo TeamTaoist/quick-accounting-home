@@ -79,7 +79,7 @@ const FeatureList = styled.div`
 `;
 const Feature = styled.div`
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-between;
   gap: 40px;
   /* align-items: center; */
   padding: 20px 40px;
