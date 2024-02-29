@@ -95,7 +95,7 @@ Error generating stack: `+o.message+`
   }
 `,Tm=M.ul`
   position: absolute;
-  right: 30px;
+  right: 11px;
   top: 60px;
   display: none;
   line-height: 20px;
@@ -123,7 +123,7 @@ Error generating stack: `+o.message+`
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var $m=ve.exports,Dm=Symbol.for("react.element"),Mm=Symbol.for("react.fragment"),Am=Object.prototype.hasOwnProperty,jm=$m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,Fm={key:!0,ref:!0,__self:!0,__source:!0};function td(e,t,n){var r,i={},o=null,l=null;n!==void 0&&(o=""+n),t.key!==void 0&&(o=""+t.key),t.ref!==void 0&&(l=t.ref);for(r in t)Am.call(t,r)&&!Fm.hasOwnProperty(r)&&(i[r]=t[r]);if(e&&e.defaultProps)for(r in t=e.defaultProps,t)i[r]===void 0&&(i[r]=t[r]);return{$$typeof:Dm,type:e,key:o,ref:l,props:i,_owner:jm.current}}mo.Fragment=Mm;mo.jsx=td;mo.jsxs=td;(function(e){e.exports=mo})(Xu);const z=Xu.exports.jsx,K=Xu.exports.jsxs,Xo=[{name:"Home",href:"home"},{name:"Feature",href:"feature"},{name:"Benefits",href:"benefits"},{name:"Contact",href:"contact"}],Um=()=>{const e=ve.exports.useRef(null),[t,n]=ve.exports.useState(!1),[r,i]=ve.exports.useState("home"),o=l=>{i(l);const u=document.getElementById(l);if(u){const c=u.getBoundingClientRect().top+window.pageYOffset-70;window.scrollTo({top:c,behavior:"smooth"})}};return ve.exports.useEffect(()=>{const l=()=>{const u=window.scrollY,s=Xo.reduce((c,m)=>{const h=document.getElementById(m.href);if(h){const p=h.offsetTop;if(Math.abs(p-u)<Math.abs(c.offsetTop-u))return{href:m.href,offsetTop:p}}return c},{href:"",offsetTop:Number.MAX_VALUE});i(s.href)};return window.addEventListener("scroll",l),()=>{window.removeEventListener("scroll",l)}},[]),ve.exports.useEffect(()=>{const l=u=>{t&&e.current&&!e.current.contains(u.target)&&n(!1)};return t&&window.addEventListener("click",l),()=>{window.removeEventListener("click",l)}},[t]),K(Cm,{children:[K(_m,{children:[z(zm,{onClick:()=>o("home"),children:z("img",{src:Om,alt:""})}),K(Pm,{children:[Xo.map((l,u)=>z(Nm,{onClick:()=>o(l.href),className:r===l.href?"active":"",children:l.name},u)),z("button",{children:z("a",{href:"https://qa.taoist.dev/",children:"Get Started"})})]}),z(Lm,{onClick:()=>n(!t),ref:e,children:z("img",{src:Im,alt:""})})]}),t&&z(Tm,{children:Xo.map((l,u)=>z(Rm,{onClick:()=>o(l.href),className:r===l.href?"active":"",children:l.name},u))})]})},nd=""+new URL("arrow.12c45d3c.svg",import.meta.url).href,Bm=""+new URL("dao-icon.7ac9869a.svg",import.meta.url).href,Hm=""+new URL("crypto.9e27f435.svg",import.meta.url).href,Vm=""+new URL("web3.0821d741.svg",import.meta.url).href,Wm=""+new URL("cancel.e2fd2624.svg",import.meta.url).href,rd=({isOpen:e,onClose:t})=>e?z(Qm,{children:K(Ym,{children:[z("h2",{children:"Coming soon!"}),z("button",{onClick:t,children:z("img",{src:Wm,alt:""})})]})}):null,Qm=M.div`
+ */var $m=ve.exports,Dm=Symbol.for("react.element"),Mm=Symbol.for("react.fragment"),Am=Object.prototype.hasOwnProperty,jm=$m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,Fm={key:!0,ref:!0,__self:!0,__source:!0};function td(e,t,n){var r,i={},o=null,l=null;n!==void 0&&(o=""+n),t.key!==void 0&&(o=""+t.key),t.ref!==void 0&&(l=t.ref);for(r in t)Am.call(t,r)&&!Fm.hasOwnProperty(r)&&(i[r]=t[r]);if(e&&e.defaultProps)for(r in t=e.defaultProps,t)i[r]===void 0&&(i[r]=t[r]);return{$$typeof:Dm,type:e,key:o,ref:l,props:i,_owner:jm.current}}mo.Fragment=Mm;mo.jsx=td;mo.jsxs=td;(function(e){e.exports=mo})(Xu);const z=Xu.exports.jsx,K=Xu.exports.jsxs,Xo=[{name:"Home",href:"home"},{name:"Feature",href:"feature"},{name:"Benefits",href:"benefits"},{name:"Contact",href:"contact"}],Um=()=>{const e=ve.exports.useRef(null),[t,n]=ve.exports.useState(!1),[r,i]=ve.exports.useState("home"),o=l=>{i(l);const u=document.getElementById(l);if(u){const c=u.getBoundingClientRect().top+window.pageYOffset-70;window.scrollTo({top:c,behavior:"smooth"})}};return ve.exports.useEffect(()=>{const l=()=>{const u=window.scrollY,s=Xo.reduce((c,m)=>{const h=document.getElementById(m.href);if(h){const p=h.offsetTop;if(Math.abs(p-u)<Math.abs(c.offsetTop-u))return{href:m.href,offsetTop:p}}return c},{href:"",offsetTop:Number.MAX_VALUE});i(s.href)};return window.addEventListener("scroll",l),()=>{window.removeEventListener("scroll",l)}},[]),ve.exports.useEffect(()=>{const l=u=>{t&&e.current&&!e.current.contains(u.target)&&n(!1)};return t&&window.addEventListener("click",l),()=>{window.removeEventListener("click",l)}},[t]),K(Cm,{children:[K(_m,{children:[z(zm,{onClick:()=>o("home"),children:z("img",{src:Om,alt:""})}),K(Pm,{children:[Xo.map((l,u)=>z(Nm,{onClick:()=>o(l.href),className:r===l.href?"active":"",children:l.name},u)),z("button",{children:z("a",{href:"https://qa.taoist.dev/",target:"_blank",children:"Get Started"})})]}),z(Lm,{onClick:()=>n(!t),ref:e,children:z("img",{src:Im,alt:""})})]}),t&&z(Tm,{children:Xo.map((l,u)=>z(Rm,{onClick:()=>o(l.href),className:r===l.href?"active":"",children:l.name},u))})]})},nd=""+new URL("arrow.12c45d3c.svg",import.meta.url).href,Bm=""+new URL("dao-icon.7ac9869a.svg",import.meta.url).href,Hm=""+new URL("crypto.9e27f435.svg",import.meta.url).href,Vm=""+new URL("web3.0821d741.svg",import.meta.url).href,Wm=""+new URL("cancel.e2fd2624.svg",import.meta.url).href,rd=({isOpen:e,onClose:t})=>e?z(Qm,{children:K(Ym,{children:[z("h2",{children:"Coming soon!"}),z("button",{onClick:t,children:z("img",{src:Wm,alt:""})})]})}):null,Qm=M.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -139,6 +139,7 @@ Error generating stack: `+o.message+`
   border-radius: 5px;
   position: relative;
   button {
+    border: none;
     outline: none;
     background: var(--text-primary);
     padding: 5px 10px;
@@ -285,7 +286,7 @@ Error generating stack: `+o.message+`
     }
   }
   @media (max-width: 600px) {
-    width: 320px;
+    width: 310px;
   }
 `,u0=""+new URL("traceable.33cf7351.svg",import.meta.url).href,s0=""+new URL("real-time.e1714a6c.svg",import.meta.url).href,a0=()=>K(c0,{id:"benefits",children:[z(go,{children:"BENEFITS"}),K(f0,{children:[K(wa,{children:[z("img",{src:u0,alt:""}),z("h4",{children:"Traceable Account Flow"}),z("p",{children:"Quick Accounting utilizes blockchain technology to ensure all financial flows are accurately traced and recorded, guaranteeing the reliability and transparency of financial data."})]}),K(wa,{children:[z("img",{src:s0,alt:""}),z("h4",{children:"Real-time Visibility"}),z("p",{children:"Quick Accounting provides real-time financial data and reports, enabling crypto organizations to stay updated on their financial status and share transparent financial information with stakeholders."})]})]})]}),c0=M.section`
   padding: 40px 10px;
@@ -344,7 +345,7 @@ Error generating stack: `+o.message+`
       max-width: 260px;
     }
   }
-`,d0=()=>K(p0,{id:"home",children:[z("h1",{children:"An web3 Accounting Software for Crypto Organizations."}),z("p",{children:"Quick Accounting has the ability to tracking the transactions of crypto assets for organizations, maintain balance sheet of organizations, and generate financial reports. Everything in QA is trackable, and transparent."}),z("button",{children:z("a",{href:"https://qa.taoist.dev/",children:"Get Started"})})]}),p0=M.div`
+`,d0=()=>K(p0,{id:"home",children:[z("h1",{children:"An web3 Accounting Software for Crypto Organizations."}),z("p",{children:"Quick Accounting has the ability to tracking the transactions of crypto assets for organizations, maintain balance sheet of organizations, and generate financial reports. Everything in QA is trackable, and transparent."}),z("button",{children:z("a",{href:"https://qa.taoist.dev/",target:"_blank",children:"Get Started"})})]}),p0=M.div`
   padding: 80px 0;
   display: flex;
   flex-direction: column;
@@ -424,7 +425,7 @@ Error generating stack: `+o.message+`
   }
 `,k0=M.div`
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-between;
   gap: 40px;
   /* align-items: center; */
   padding: 20px 40px;
@@ -519,6 +520,6 @@ Error generating stack: `+o.message+`
   padding-top: 90px;
   @media (max-width: 768px) {
     padding-top: 45px;
-    padding-inline: 3%;
+    padding-inline: 5%;
   }
 `,_0=()=>K(C0,{children:[z(d0,{}),z(Gm,{}),z(y0,{}),z(a0,{}),z(n0,{})]}),P0=()=>K("div",{children:[z(Um,{}),z(_0,{})]});Tf(document.getElementById("root")).render(z(ve.exports.StrictMode,{children:z(P0,{})}));
