@@ -289,7 +289,7 @@ Error generating stack: `+o.message+`
     width: 310px;
   }
 `,u0=""+new URL("traceable.33cf7351.svg",import.meta.url).href,s0=""+new URL("real-time.e1714a6c.svg",import.meta.url).href,a0=()=>K(c0,{id:"benefits",children:[z(go,{children:"BENEFITS"}),K(f0,{children:[K(wa,{children:[z("img",{src:u0,alt:""}),z("h4",{children:"Traceable Account Flow"}),z("p",{children:"Quick Accounting utilizes blockchain technology to ensure all financial flows are accurately traced and recorded, guaranteeing the reliability and transparency of financial data."})]}),K(wa,{children:[z("img",{src:s0,alt:""}),z("h4",{children:"Real-time Visibility"}),z("p",{children:"Quick Accounting provides real-time financial data and reports, enabling crypto organizations to stay updated on their financial status and share transparent financial information with stakeholders."})]})]})]}),c0=M.section`
-  padding: 40px 10px;
+  padding: 40px 0;
 `,f0=M.div`
   display: flex;
   gap: 30px;
